@@ -4,7 +4,7 @@ let dernierSigneClique = null;
 async function afficherHoroscope(signe, url, elementId){
     const resultat = document.getElementById(elementId);
     if (dernierSigneClique === `${signe}-${elementId}`) {
-        resultat.innerText = "Ton hosroscope apparaîtra ici ✨";
+        resultat.innerText = "Ton horoscope apparaîtra ici ✨";
         dernierSigneClique = null;
         return;
     }

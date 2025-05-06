@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: #1E1B2E;
     font-family: "Quicksand", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     
 }
@@ -16,7 +16,7 @@ header {
 h1 {
     font-family: "Poiret One", sans-serif;
     letter-spacing: 2.5px;
-    font-size: 30px;
+    font-size: 35px;
     color: #C7A2D8;
     margin: 10px 0;
 
@@ -34,11 +34,12 @@ p {
     font-weight: 500;
     color: #F2F0F7;
     margin: 10px 5px;
+    font-size: 18px;
 }
 
 img {
     width: 100%;
-    height: auto;
+    height: 380px;
     position:absolute;
     top: 0;
     left: 0;
@@ -46,3 +47,44 @@ img {
     opacity: 0.5;
 }
 
+main {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+button {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #A06BC6;
+    color: #F2F0F7;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B889D0;
+    color: white;
+   
+}
+
+button:focus {
+    outline: 2px solid #80559f;
+    outline-offset: 1px;
+}   
+
+.zodiac_buttons {
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+
+h3 {
+
+    font-family: "Poiret One", sans-serif;
+}
