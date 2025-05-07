@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
-    
+    <script src="/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,48 +19,32 @@
         Profite bien, c'est ton moment rien qu'à toi ⭐</p>
         <img src="img/milkyway.png" alt="">
     </header>
+
     <main>
         <section id="horoscope_jour">
             <h3>Ton horoscope du jour :</h3>
-            
-            <!-- Fonctionnalité de la V2 -->
-            <!-- <h4>Tu ne le connais pas ? Pas de panique, clique <a href="signe.html">ici</a></h4> -->
-
             <div class="zodiac_buttons">
-                <button onclick="afficherHoroscope('belier', `https://kayoo123.github.io/astroo-api/jour.json`, 'resultat')">Bélier ♈</button>
-                <button onclick="getHoroscope('taureau')">Taureau ♉</button>
-                <button onclick="getHoroscope('gemeaux')">Gémeaux ♊</button>
-                <button onclick="getHoroscope('cancer')">Cancer ♋</button>
-                <button onclick="getHoroscope('lion')">Lion ♌</button>
-                <button onclick="getHoroscope('vierge')">Vierge ♍</button>
-                <button onclick="getHoroscope('balance')">Balance ♎</button>
-                <button onclick="getHoroscope('scorpion')">Scorpion ♏</button>
-                <button onclick="getHoroscope('sagittaire')">Sagittaire ♐</button>
-                <button onclick="getHoroscope('capricorne')">Capricorne ♑</button>
-                <button onclick="getHoroscope('verseau')">Verseau ♒</button>
-                <button onclick="getHoroscope('poissons')">Poissons ♓</button>
-                <p id="resultat">Ton horoscope apparaîtra ici ✨</p>
+                <% signes.forEach(signe => { %>
+                    <button onclick="afficherHoroscope('<%= signe.nom %>', ` https://kayoo123.github.io/astroo-api/jour.json `, 'resultatJour')">
+                        <%= signe.label %>
+                    </button>
+                <% }); %>
             </div>
+            <p id="resultatJour">Ton horoscope apparaîtra ici ✨</p>
         </section>
+
         <section id="horoscope_semaine">
             <h3> Ton horoscope de la semaine :</h3>
             <div class="zodiac_buttons">
-                <button onclick="afficherHoroscope('belier', `https://kayoo123.github.io/astroo-api/hebdomadaire.json`, 'resultatWeek')">Bélier ♈</button>
-                <button onclick="getHoroscopeWeek('taureau')">Taureau ♉</button>
-                <button onclick="getHoroscopeWeek('gemeaux')">Gémeaux ♊</button>
-                <button onclick="getHoroscopeWeek('cancer')">Cancer ♋</button>
-                <button onclick="getHoroscopeWeek('lion')">Lion ♌</button>
-                <button onclick="getHoroscopeWeek('vierge')">Vierge ♍</button>
-                <button onclick="getHoroscopeWeek('balance')">Balance ♎</button>
-                <button onclick="getHoroscopeWeek('scorpion')">Scorpion ♏</button>
-                <button onclick="getHoroscopeWeek('sagittaire')">Sagittaire ♐</button>
-                <button onclick="getHoroscopeWeek('capricorne')">Capricorne ♑</button>
-                <button onclick="getHoroscopeWeek('verseau')">Verseau ♒</button>
-                <button onclick="getHoroscopeWeek('poissons')">Poissons ♓</button>
-                <p id="resultatWeek">Ton horoscope apparaîtra ici ✨</p>
+               <% signes.forEach(signe => { %>
+                    <button onclick="afficherHoroscope('<%= signe.nom %>', `https://kayoo123.github.io/astroo-api/hebdomadaire.json`, 'resultatSemaine')">
+                        <%= signe.label %>
+                    </button>
+                <% }); %>
             </div>
+            <p id="resultatSemaine">Ton horoscope apparaîtra ici ✨</p>
         </section>
     </main>
-    <script src="script.js"></script>
+    
     </body>
 </html>
