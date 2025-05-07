@@ -3,3 +3,56 @@
 @use "theme" as *;
 @use "header" as *;
 @use "footer" as *;
+
+
+body {
+    margin: $margin-none;
+    background-color: $backgound-color-primary;
+    font-family: $font-family-primary;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    
+}
+
+
+main {
+    color: $font-color-primary;
+    text-align: center;
+    font-size: $font-size-base;
+}
+
+
+button {
+    font-size: $font-size-small;
+    font-family: $font-family-primary;
+    width: $width-small;
+    border-radius: $border-radius-base;
+    background-color:$background-color-button;
+    color: $font-color-primary;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $background-color-button-hover;
+    color: $font-color-primary;
+   
+}
+
+button:focus {
+    outline: $button-outline solid $outline-color;
+    outline-offset: $outline-offset;
+}   
+
+.zodiac_buttons {
+    font-family: $font-family-primary;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $gap-base;
+    
+}
+
+h3 {
+
+    font-family: $font-family-secondary;
+}

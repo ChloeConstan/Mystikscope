@@ -1,14 +1,46 @@
 // Font size
+$font-size-large: 35px;
+$font-size-base: 20px;
+$font-size-small: 18px;
 
+// Font weight
+$font-weight-base: 500;
 
 
 // Margin
-
+$margin-none: 0;
+$margin-small: 5px;
+$margin-base: 10px;
+$margin-large: 20px;
 
 
 // Padding
-
+$padding-none: 0;
+$padding-small: 8px;
+$padding-base: 16px;
 
 
 // Border radius
+$border-radius-base: 15px;
 
+
+// Width
+$width-small: 200px;
+$width-percentage: 100%;
+
+// Height
+$height-base: 380px;
+
+// line-height
+$line-height-base: 1.6;
+
+//letter-spacing
+$letter-spacing-base: 1px;
+$letter-spacing-medium: 2.5px;
+
+// outline
+$button-outline: 2px;
+$outline-offset: 1px;
+
+// gap
+$gap-base: 5px;

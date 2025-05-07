@@ -1,0 +1,43 @@
+@use "variables" as *;
+@use "theme" as *;
+
+
+header {
+    padding: $padding-base $padding-small;
+    text-align: center;  
+    color: $font-color-secondary;
+}
+
+h1 {
+    font-family: $font-family-secondary;
+    letter-spacing: $letter-spacing-medium;
+    font-size: $font-size-large;
+    color: $font-color-tertiary;
+    margin: $margin-base $margin-none;
+
+}
+
+h2 {
+    font-family: $font-family-secondary;
+    font-size: $font-size-base;
+    letter-spacing: $letter-spacing-base;
+    color: $font-color-quaternary;
+    margin-top: $margin-large;
+}
+
+p {
+    font-weight: $font-weight-base;
+    color: $font-color-primary;
+    margin: $margin-base $margin-small;
+    font-size: $font-size-small;
+}
+
+img {
+    width: $width-percentage;
+    height: $height-base;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}

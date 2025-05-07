@@ -1,90 +1,86 @@
-body {
-    margin: 0;
-    background-color: #1E1B2E;
-    font-family: "Quicksand", sans-serif;
-    font-size: 20px;
-    line-height: 1.6;
-    
-}
-
 header {
-    padding: 16px 8px;
-    text-align: center;  
-    color: #6A4C93;
+  padding: 16px 8px;
+  text-align: center;
+  color: #6A4C93;
 }
 
 h1 {
-    font-family: "Poiret One", sans-serif;
-    letter-spacing: 2.5px;
-    font-size: 35px;
-    color: #C7A2D8;
-    margin: 10px 0;
-
+  font-family: "Poiret One", sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 35px;
+  color: #C7A2D8;
+  margin: 10px 0;
 }
 
 h2 {
-    font-family: "Poiret One", sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: #E0B3FF;
-    margin-top: 20px;
+  font-family: "Poiret One", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #E0B3FF;
+  margin-top: 20px;
 }
 
 p {
-    font-weight: 500;
-    color: #F2F0F7;
-    margin: 10px 5px;
-    font-size: 18px;
+  font-weight: 500;
+  color: #F2F0F7;
+  margin: 10px 5px;
+  font-size: 18px;
 }
 
 img {
-    width: 100%;
-    height: 380px;
-    position:absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.5;
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+body {
+  margin: 0;
+  background-color: #1E1B2E;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 main {
-    color: white;
-    text-align: center;
-    font-size: 20px;
+  color: #F2F0F7;
+  text-align: center;
+  font-size: 20px;
 }
 
-
 button {
-    font-size: 18px;
-    font-family: "Quicksand", sans-serif;
-    width: 200px;
-    border-radius: 15px;
-    background-color: #A06BC6;
-    color: #F2F0F7;
-    cursor: pointer;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #A06BC6;
+  color: #F2F0F7;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #B889D0;
-    color: white;
-   
+  background-color: #B889D0;
+  color: #F2F0F7;
 }
 
 button:focus {
-    outline: 2px solid #80559f;
-    outline-offset: 1px;
-}   
+  outline: 2px solid #80559f;
+  outline-offset: 1px;
+}
 
 .zodiac_buttons {
-    font-family: "Quicksand", sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 h3 {
-
-    font-family: "Poiret One", sans-serif;
+  font-family: "Poiret One", sans-serif;
 }
+
+/*# sourceMappingURL=style.css.map */
