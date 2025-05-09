@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystikscope ✨</title>
-    <link rel="stylesheet" href="style/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
-    <script src="/script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>Mystikscope ✨</h1>
-        <h2>Bienvenue, cher signe du Zodiaque !</h2>
-        <p>Ici, découvre ton horoscope quotidien, ainsi que des infos sur ton signe solaire, lunaire et ton ascendant.
-        <br>
-        Profite bien, c'est ton moment rien qu'à toi ⭐</p>
-        <img src="img/milkyway.png" alt="">
-    </header>
+    <%- include('partials/header.ejs') %>
 
     <main>
         <section id="horoscope_jour">
@@ -46,5 +26,5 @@
         </section>
     </main>
     
-    </body>
-</html>
+    <%- include('partials/footer.ejs') %>
+    

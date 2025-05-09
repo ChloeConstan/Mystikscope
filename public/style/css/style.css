@@ -37,6 +37,26 @@ img {
   opacity: 0.5;
 }
 
+footer {
+  padding: 16px 8px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  background-color: #80559f;
+  height: 150px;
+}
+
+p {
+  color: #F2F0F7;
+  font-size: 18px;
+}
+
+a {
+  color: #C7A2D8;
+  text-shadow: 1px 1px #6A4C93;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   background-color: #1E1B2E;

@@ -1,0 +1,22 @@
+@use "variables" as *;
+@use "theme" as *;
+
+footer {
+    padding: $padding-base $padding-small;
+    text-align: center;  
+    margin-top: $margin-large;
+    font-weight: $font-weight-base;
+    background-color: $background-color-secondary;
+    height: $height-small;
+}
+
+p {
+    color: $font-color-primary;
+    font-size: $font-size-small;
+}
+
+a {
+    color: $font-color-tertiary;
+    text-shadow: 1px 1px $font-color-secondary;
+    text-decoration: none;
+}
