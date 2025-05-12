@@ -1,15 +1,15 @@
-let dernierSigneClique = null;
+let lastSignClick = null;
 
 
-async function afficherHoroscope(signe, url, elementId){
-    const resultat = document.getElementById(elementId);
-    if (dernierSigneClique === `${signe}-${elementId}`) {
-        resultat.innerText = "Ton horoscope apparaîtra ici ✨";
-        dernierSigneClique = null;
+async function showHoroscope(signs, url, elementId){
+    const result = document.getElementById(elementId);
+    if (lastSignClicke === `${signs}-${elementId}`) {
+        result.innerText = "Ton horoscope apparaîtra ici ✨";
+        lastSignClick = null;
         return;
     }
     const response = await fetch(url);
     const data = await response.json();
-    resultat.innerText = data[signe];
-    dernierSigneClique = `${signe}-${elementId}`;
+    result.innerText = data[signs];
+    lastSignClick = `${signs}-${elementId}`;
 }

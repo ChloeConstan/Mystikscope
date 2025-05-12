@@ -1,28 +1,28 @@
     <%- include('partials/header.ejs') %>
 
     <main>
-        <section id="horoscope_jour">
+        <section id="day_horoscope">
             <h3>Ton horoscope du jour :</h3>
             <div class="zodiac_buttons">
-                <% signes.forEach(signe => { %>
-                    <button onclick="afficherHoroscope('<%= signe.nom %>', ` https://kayoo123.github.io/astroo-api/jour.json `, 'resultatJour')">
+                <% signs.forEach(signs => { %>
+                    <button onclick="showHoroscope('<%= signs.name %>', ` https://kayoo123.github.io/astroo-api/jour.json `, 'resultatJour')">
                         <%= signe.label %>
                     </button>
                 <% }); %>
             </div>
-            <p id="resultatJour">Ton horoscope apparaîtra ici ✨</p>
+            <p id="day_results">Ton horoscope apparaîtra ici ✨</p>
         </section>
 
-        <section id="horoscope_semaine">
+        <section id="week_horoscope">
             <h3> Ton horoscope de la semaine :</h3>
             <div class="zodiac_buttons">
-               <% signes.forEach(signe => { %>
-                    <button onclick="afficherHoroscope('<%= signe.nom %>', `https://kayoo123.github.io/astroo-api/hebdomadaire.json`, 'resultatSemaine')">
+               <% signs.forEach(signs => { %>
+                    <button onclick="showHoroscope('<%= signs.name %>', `https://kayoo123.github.io/astroo-api/hebdomadaire.json`, 'resultatSemaine')">
                         <%= signe.label %>
                     </button>
                 <% }); %>
             </div>
-            <p id="resultatSemaine">Ton horoscope apparaîtra ici ✨</p>
+            <p id="week_results">Ton horoscope apparaîtra ici ✨</p>
         </section>
     </main>
     

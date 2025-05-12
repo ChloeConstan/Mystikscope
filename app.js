@@ -8,23 +8,23 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
-    const signes = [
-        {nom: 'belier', label: 'Bélier ♈'},
-        {nom: 'taureau', label: 'Taureau ♉'},
-        {nom: 'gemeaux', label: 'Gémeaux ♊'},
-        {nom: 'cancer', label: 'Cancer ♋'},
-        {nom: 'lion', label: 'Lion ♌'},
-        {nom: 'vierge', label: 'Vierge ♍'},
-        {nom: 'balance', label: 'Balance ♎'},
-        {nom: 'scorpion', label: 'Scorpion ♏'},
-        {nom: 'sagittaire', label: 'Sagittaire ♐'},
-        {nom: 'capricorne', label: 'Capricorne ♑'},
-        {nom: 'verseau', label: 'Verseau ♒'},
-        {nom: 'poissons', label: 'Poissons ♓'},
+    const signs = [
+        {name: 'belier', label: 'Bélier ♈'},
+        {name: 'taureau', label: 'Taureau ♉'},
+        {name: 'gemeaux', label: 'Gémeaux ♊'},
+        {name: 'cancer', label: 'Cancer ♋'},
+        {name: 'lion', label: 'Lion ♌'},
+        {name: 'vierge', label: 'Vierge ♍'},
+        {name: 'balance', label: 'Balance ♎'},
+        {name: 'scorpion', label: 'Scorpion ♏'},
+        {name: 'sagittaire', label: 'Sagittaire ♐'},
+        {name: 'capricorne', label: 'Capricorne ♑'},
+        {name: 'verseau', label: 'Verseau ♒'},
+        {name: 'poissons', label: 'Poissons ♓'},
     ];
     
 
-    res.render('index', {signes});
+    res.render('index', {signs});
 
 });
     
