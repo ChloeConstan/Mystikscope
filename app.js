@@ -2,10 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-
 app.set ('view engine', 'ejs');
 app.use(express.static('public'));
-
 
 app.get('/', (req, res) => {
     const signs = [
@@ -22,10 +20,7 @@ app.get('/', (req, res) => {
         {name: 'verseau', label: 'Verseau ♒'},
         {name: 'poissons', label: 'Poissons ♓'},
     ];
-    
-
     res.render('index', {signs});
-
 });
     
 app.listen(PORT, () => {
